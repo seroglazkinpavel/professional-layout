@@ -949,3 +949,173 @@ body {
     }
 }
 /* end cart */
+
+/*start registration */
+
+.registration {
+    margin-top: 40px;
+    margin-bottom: 96px;
+
+    @media (min-width: 1600px) {
+        margin-top: 64px;
+    }
+
+    @media (max-width: 767px) {
+        padding: 0 8px;
+    }
+
+    @media (min-width: 768px) and (max-width: 1599px) {
+        padding: 0 16px;
+    }
+
+    @media (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .registrationLeft {
+        @media (min-width: 768px) and (max-width: 1599px) {
+            margin-right: 22px;
+        }
+
+        @media (min-width: 1600px) {
+            margin-right: 128px;
+        }
+
+        .registrationName {
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+            color: #222222;
+        }
+
+        .registrationInput {
+            border: 1px solid #a4a4a4;
+            height: 44px;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 12px 16px;
+            font-weight: 300;
+            font-size: 13px;
+            line-height: 16px;
+            color: #b1b1b1;
+            margin-top: 19px;
+
+            &::-webkit-input-placeholder {
+                font-family: inherit;
+                font-weight: 300;
+                font-size: 13px;
+                line-height: 16px;
+                color: #b1b1b1;
+            }
+
+            &::-moz-placeholder {
+                font-family: inherit;
+                font-weight: 300;
+                font-size: 13px;
+                line-height: 16px;
+                color: #b1b1b1;
+            }
+
+            &::-ms-input-placeholder {
+                font-family: inherit;
+                font-weight: 300;
+                font-size: 13px;
+                line-height: 16px;
+                color: #b1b1b1;
+            }
+        }
+
+        .registrationGender {
+            margin-top: 31px;
+            margin-bottom: 33px;
+            font-weight: 300;
+            font-size: 11px;
+            line-height: 13px;
+            color: #000000;
+            display: flex;
+            align-items: center;
+
+            input {
+                margin-right: 10px;
+
+                &:not(:first-of-type) {
+                    margin-left: 20px;
+                }
+            }
+        }
+
+        .registrationLogin {
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+            color: #222222;
+        }
+
+        .registrationText {
+            font-weight: 300;
+            font-size: 13px;
+            line-height: 16px;
+            color: #b1b1b1;
+            margin-top: 15px;
+            margin-bottom: 39px;
+        }
+
+        .registrationButton {
+            height: 50px;
+            width: 167px;
+            background: $commonColor;
+            font-family: inherit;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #ffffff;
+            border: none;
+
+            img {
+                margin-left: 20px;
+            }
+        }
+    }
+
+    .registrationRight {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: #000000;
+
+        @media (max-width: 767px) {
+            margin-top: 40px;
+        }
+
+        @media (min-width: 1600px) {
+            font-size: 24px;
+            line-height: 29px;
+        }
+
+        .registrationRightTitle {
+            margin-bottom: 32px;
+        }
+
+        .registrationRightText {
+            margin-bottom: 22px;
+        }
+
+        .registrationRightList {
+            padding-left: 0;
+            margin: 0;
+            list-style-type: none;
+
+            li {
+                background: url(#{$imagesPath}/registrationMarker.svg) no-repeat;
+                padding-left: 42px;
+
+                &:not(:first-child) {
+                    margin-top: 16px;
+                }
+            }
+        }
+    }
+}
+
+/*end registration */

@@ -665,6 +665,7 @@ body {
 }
 
 .footerRight {
+    display: flex;
     max-width: 286px;
 }
 
@@ -686,10 +687,6 @@ body {
 .footer a:hover {
     background: #f16d7f;
     color: white;
-}
-
-.footerRight {
-    display: flex;
 }
 
 /* end footer */
